@@ -1,28 +1,37 @@
 public class Customer extends Observer {
     //member vars
     String name;
-    Store favStore;
     float discount;
 
-    //constructor
-    public Customer(String name, Store favStore, float discount){
+    //constructors
+    public Customer(String name){
         this.name = name;
-        this.favStore = favStore;
-        this.discount = discount;
+    }
+    public Customer(String name, Store favStore){
+        this.name = name;
+        favStore.register(this);
+        this.update(favStore.discount);
     }
 
     @Override
     void update(float discount){
         this.discount = discount;
         System.out.println(name+"'s updated discount: "+ this.discount);
+        System.out.println();
     }
 
     void register(Store favStore){
-        this.favStore.register(this);
+        favStore.register(this);
+        this.update(favStore.discount);
     }
 
     void unregister(Store favStore){
-        this.favStore.unregister(this);
+        favStore.unregister(this);
+        this.update(0F);
+    }
+
+    public String toString(){
+        return this.name;
     }
 
 
