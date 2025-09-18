@@ -13,6 +13,7 @@ public class Customer extends Observer {
         this.update(favStore.discount);
     }
 
+    //update customer's discount
     @Override
     void update(float discount){
         this.discount = discount;
@@ -20,16 +21,19 @@ public class Customer extends Observer {
         System.out.println();
     }
 
+    //register customer to favStore
     void register(Store favStore){
         favStore.register(this);
         this.update(favStore.discount);
     }
 
+    //unregister customer from favStore
     void unregister(Store favStore){
         favStore.unregister(this);
         this.update(0F);
     }
 
+    //better printing
     public String toString(){
         return this.name;
     }
