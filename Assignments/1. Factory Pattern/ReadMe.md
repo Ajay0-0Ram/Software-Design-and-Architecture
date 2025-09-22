@@ -1,5 +1,7 @@
 <img width="935" height="601" alt="image" src="https://github.com/user-attachments/assets/20136c02-d52a-45c6-8b80-15c748e1b24f" />
 
+
+
 **Software Design and Architecture - Assignment 1**
 **Group 33**
 
