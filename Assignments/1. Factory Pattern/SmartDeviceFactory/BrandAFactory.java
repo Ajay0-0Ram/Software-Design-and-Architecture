@@ -5,7 +5,7 @@ package SmartDeviceFactory;
  ** This implements the Smart Device Factory to create Brand A Bulbs and Locks
  */
 
-public class BrandAFactory {
+public class BrandAFactory implements SmartDeviceFactory {
 
     //create a Brand A Bulb
     public Bulb createBulb(){

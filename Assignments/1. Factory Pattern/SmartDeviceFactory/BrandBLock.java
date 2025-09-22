@@ -5,21 +5,23 @@ package SmartDeviceFactory;
  ** This implements the Lock interface, and is created by the BrandBFactory
  */
 
+import java.io.File;
+
 public class BrandBLock implements Lock{
     private double batteryConsumption;
 
-    //constructors
+    //constructor
     public BrandBLock(){
     }
-    public BrandBLock(double batterConsumption){
-        this.batteryConsumption = batteryConsumption;
-    }
 
-    //set battery consumption
+    //set batteryConsumption
     @Override
-    public void setBatteryConsumption(double batteryConsumption) {
-        this.batteryConsumption = batteryConsumption;
+    public void createUsage(File input) {
+        //read the battery consumption from File
+        UsageReader u = new UsageReader();
+        this.batteryConsumption = u.readValue(input, "BrandBLock");
+
         System.out.println("The battery consumption of this Brand B Smart Lock" +
-                             "\nhas been set to: " + this.batteryConsumption);
+                "\nhas been set to: " + batteryConsumption+"mAh/day");
     }
 }

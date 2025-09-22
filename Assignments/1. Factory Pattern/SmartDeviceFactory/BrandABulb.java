@@ -5,21 +5,23 @@ package SmartDeviceFactory;
  ** This implements the Bulb interface, and is created by the BrandAFactory
  */
 
+import java.io.File;
+
 public class BrandABulb implements Bulb{
     private double powerUsage;
 
-    //constructors
+    //constructor
     public BrandABulb(){
-    }
-    public BrandABulb(double powerUsage){
-        this.powerUsage = powerUsage;
     }
 
     //set power usage
     @Override
-    public void setPowerUsage(double powerUsage) {
-        this.powerUsage = powerUsage;
-        System.out.println("The power usage of this Brand A Smart Bulb"+
-                            "\nhas been set to: " + this.powerUsage);
+    public void createUsage(File input) {
+        //read the power Usage from File
+        UsageReader u = new UsageReader();
+        this.powerUsage = u.readValue(input, "BrandABulb");
+
+        System.out.println("The power usage of this Brand A Smart Bulb" +
+                "\nhas been set to: " + powerUsage+'W');
     }
 }

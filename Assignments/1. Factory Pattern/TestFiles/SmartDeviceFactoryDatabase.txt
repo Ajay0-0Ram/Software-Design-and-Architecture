@@ -1,0 +1,5 @@
+BrandABulb=9.50
+BrandBBulb=12.25
+BrandALock=25.75
+BrandBLock=20.00
+
