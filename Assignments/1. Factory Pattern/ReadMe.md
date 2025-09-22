@@ -9,6 +9,6 @@ Ajay Ramsaran - 100919041 | Muhammad Saad - 100916536 | Zaid Mostafa - 100871060
 
 Descrription:
 
-The TestFiles contain the SmartDeviceFactoryDatabase text file used for the database and the test cases. The SmartDeviceFactory contains all classes and interfaces used for implementation.
+The TestFiles contain the SmartDeviceFactoryDatabase text file used for the database and the test cases. The SmartDeviceFactory contains all classes and interfaces used for implementation. The BrandAFactory interface implements the interfaces BrandABulb, BrandAlock
 
 Test Method:
