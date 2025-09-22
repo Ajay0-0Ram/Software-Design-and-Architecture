@@ -5,9 +5,7 @@
 **Software Design and Architecture - Assignment 1**
 **Group 33**
 
-Ajay Ramsaran \- 100919041
-Muhammad Saad \- 100916536
-Zaid Mostafa \- 100871060
+Ajay Ramsaran - 100919041 | Muhammad Saad - 100916536 | Zaid Mostafa - 100871060
 
 Descrription:
 
