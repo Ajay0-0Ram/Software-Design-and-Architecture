@@ -13,4 +13,8 @@ The TestFiles contain the SmartDeviceFactoryDatabase text file used for the data
 
 Test Method:
 
+The Test class tests the Abstract Factory implementation by creating a bulb and a lock from the two brands and verifying their behavior. It uses the SmartDeviceFactoryDatabase.txt database file as input, then instantiates a BrandAFactory to create a Bulb and a BrandBFactory to create a Lock. Each device calls its createUsage method to process data from the database, ensuring both the factory creation and device usage functions as intended.
+
+
+<img width="834" height="356" alt="image" src="https://github.com/user-attachments/assets/de98f4f8-268e-49a4-a51a-279b05c90472" />
 
